@@ -1,0 +1,17 @@
+# Cargo build artifacts
+/target/
+
+# Cargo.lock is intentionally committed: this workspace contains binaries
+# (apps/) as well as libraries, so the lockfile is tracked per standard Cargo
+# guidance. Do not add Cargo.lock here.
+
+# Editor / IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS junk
+.DS_Store
+Thumbs.db

@@ -1,0 +1,22 @@
+[workspace]
+resolver = "3"
+members = [
+    "apps/*",
+    "libs/camera/*",
+    "libs/desktop/*",
+    "examples/*",
+]
+
+[workspace.package]
+edition = "2024"
+authors = ["Robert Scott-Buccleuch"]
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/rsb/rsb"
+
+[workspace.lints.rust]
+missing_docs = "warn"
+unreachable_pub = "warn"
+
+[workspace.lints.clippy]
+all = { level = "warn", priority = -1 }
+doc_markdown = "warn"
