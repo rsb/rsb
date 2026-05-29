@@ -756,6 +756,14 @@ These are known-open and intentionally not yet resolved:
 5. **Batch / sync-across-a-shoot** — *not* an architecture fork but a watch-item: the one workflow the (now settled)
    single-document model genuinely strains (§8). Layer drag-and-drop between instances does not fully cover it. First
    bites around intermediate app #3; revisit then rather than now.
+6. **LibRaw binding placement / licensing (kept as a separate repo, not imported)** — the LibRaw bindings
+   (`rsb-camera-libraw`, `rsb-camera-libraw-ffi`) are deliberately kept in a **separate repository** rather than
+   imported into this monorepo. The vendored LibRaw 0.22.1 is dual-licensed **LGPL-2.1 / CDDL-1.0** (and bundles
+   further BSD-3-Clause / MIT third-party code) and is *statically linked* by the ffi crate, so pulling it into the
+   `MIT OR Apache-2.0` workspace would make the entire tree inherit those copyleft obligations. Deferred: whether to
+   consume it as a feature-gated optional path/git dependency, or to expose LibRaw only through the future
+   `rsb-camera-raw-decode` port while the binding crate stays external. Until decided, both crates remain
+   `publish = false` and live outside the monorepo.
 
 > **Closed since first draft:** the single-document vs. tabs question is **settled** (§8) — single-document,
 > over-determined by the node-graph UI's spatial appetite and by residency economics.
