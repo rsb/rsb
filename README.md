@@ -1,16 +1,32 @@
 # RSB
 
-**Rust crates for creatives who want to build local-first desktop applications they own.**
+**I'm building Lab: a free, professional-grade photo editor for the desktop.**
 
-RSB is an ecosystem of Rust crates for desktop applications that run on your machine, store their data on your disk, and
-answer to no one but the person using them. No subscriptions. No telemetry. No cloud lock-in.
+Lab runs on your machine, stores its work on your disk, and answers to no one
+but the person using it. No subscriptions. No telemetry. No cloud lock-in.
+Photography is the work I know well, and it is where professional tools have
+drifted toward subscription rentals, cloud-dependent workflows, and
+surveillance by default. Lab goes the other direction.
 
-The motivating use case is creative work — photography, illustration, design — where the current generation of
-professional tools has drifted toward subscription rentals, cloud-dependent workflows, and surveillance-by-default. RSB
-is the foundation for tools that go the other direction.
+The other half of the work is the record: every load-bearing decision behind
+the code is public — argued, recorded, and held to.
 
-RSB is opinionated. It encodes a specific position on how to build desktop applications in Rust — a layered
-architecture, a particular threading and event-loop model, and a set of conventions for how applications wire themselves
-together.
+- [rsb/lab](https://github.com/rsb/lab) — the code: one Cargo workspace,
+  small crates, enforced boundaries. GPL-3.0-or-later.
+- [rsb.sh](https://rsb.sh) — the engineering record: decisions, standards,
+  architecture, and the why.
+- [app.rsb-lab.com](https://app.rsb-lab.com) — the product home.
 
-Currently in active early development. All ecosystem crates are dual-licensed MIT OR Apache-2.0.
+## The shape of it
+
+```mermaid
+flowchart BT
+    lab["Lab — the leaf"] --> view
+    view["view-support → editor crates"] --> data
+    data["graph engine · rsb-pixel · rsb-photo-nodes<br/>rsb-photo-recipe · rsb-photo-session · photo-ops"] --> shell
+    shell["rsb-shell — the pump"] --> core["rsb-core — the root"]
+```
+
+Most general at the top, most specific at the bottom; references point up.
+It is a DAG, not a tree — the full story is at
+[rsb.sh/architecture](https://rsb.sh/architecture).
