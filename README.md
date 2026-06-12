@@ -20,11 +20,9 @@ the code is public — argued, recorded, and held to.
 ## The shape of it
 
 ```mermaid
+%%{init: {"flowchart": {"rankSpacing": 22, "nodeSpacing": 18, "padding": 4}}}%%
 flowchart BT
-    lab["Lab — the leaf"] --> view
-    view["view-support → editor crates"] --> data
-    data["graph engine · rsb-pixel · rsb-photo-nodes<br/>rsb-photo-recipe · rsb-photo-session · photo-ops"] --> shell
-    shell["rsb-shell — the pump"] --> core["rsb-core — the root"]
+    lab["Lab"] --> views["the view tier"] --> data["the photo data tier"] --> shell["rsb-shell — the pump"] --> core["rsb-core — the root"]
 ```
 
 Most general at the top, most specific at the bottom; references point up.
