@@ -13,17 +13,7 @@ The other half of the work is the record: every load-bearing decision is public,
 
 ## The shape of it
 
-```mermaid
-flowchart LR
-  R["Rules, heuristics,<br/>patterns, templates"] --> S["Spec to tickets<br/>(vertical slices)"]
-  S --> A["Agent in a sandbox<br/>(no credentials)"]
-  A --> C["Custodian<br/>performs effects"]
-  C --> G["Gate: tests, checks,<br/>behavioural scenarios"]
-  G --> V["Scorecard<br/>and merge danger"]
-  V --> O["I merge"]
-  O --> M["Measure: drift,<br/>escapes, variance"]
-  M --> R
-```
+<img src="loop.svg" alt="The factory loop: rules and templates feed a spec that becomes vertical-slice tickets; an agent works a ticket in a sandbox with no credentials; a custodian performs every effect; a gate runs tests, checks and behavioural scenarios; a scorecard with merge danger is produced; I merge on evidence; drift, escapes and variance are measured and fed back into the rules" width="680">
 
 Rules are few and mostly prohibitions. Deterministic checks block; judgement calls accrue as debt in a ledger and get paid down on their own timeline. Every profile has a reference app that is regenerated to test the rules, never the other way round.
 

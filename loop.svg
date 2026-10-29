@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="680" height="300" viewBox="0 0 680 300" role="img">
+<title>The factory loop</title>
+<desc>Rules, heuristics, patterns and templates feed a spec that becomes vertical-slice tickets. An agent works a ticket in a sandbox with no credentials; a custodian performs every effect; a gate runs tests, checks and behavioural scenarios; a scorecard with merge danger is produced; the owner merges; drift, escapes and variance are measured and fed back into the rules.</desc>
+<style>
+text{font-family:-apple-system,"Segoe UI",Helvetica,Arial,sans-serif;fill:#3d3d3a}
+.ts{font-size:12px}.tx{font-size:11px}
+.box{fill:#f1efe8;stroke:#888780}
+.p{fill:#eeedfe;stroke:#534ab7}.pt{fill:#3c3489}
+.g{fill:#e1f5ee;stroke:#0f6e56}.gt{fill:#085041}
+.a{fill:#faeeda;stroke:#ba7517}.at{fill:#633806}
+.e{fill:none;stroke:#888780;stroke-width:1.2}
+.lbl{font-size:10px;fill:#888780}
+@media (prefers-color-scheme:dark){
+text{fill:#c2c0b6}.box{fill:#2c2c2a;stroke:#888780}
+.p{fill:#3c3489;stroke:#afa9ec}.pt{fill:#eeedfe}
+.g{fill:#085041;stroke:#5dcaa5}.gt{fill:#e1f5ee}
+.a{fill:#633806;stroke:#ef9f27}.at{fill:#faeeda}
+.e{stroke:#888780}.lbl{fill:#9a9890}}
+</style>
+<defs>
+<marker id="m" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+<path d="M0 0 L10 5 L0 10 z" fill="#888780"/></marker>
+</defs>
+
+<!-- row 1 (y 40..96): Rules -> Spec -> Agent -> Custodian -->
+<rect class="p" x="20" y="40" width="140" height="56" rx="8" stroke-width="0.6"/>
+<text class="ts pt" x="90" y="63" text-anchor="middle">Rules, heuristics,</text>
+<text class="ts pt" x="90" y="79" text-anchor="middle">patterns, templates</text>
+
+<rect class="box" x="190" y="40" width="140" height="56" rx="8" stroke-width="0.6"/>
+<text class="ts" x="260" y="63" text-anchor="middle">Spec to tickets</text>
+<text class="tx" x="260" y="79" text-anchor="middle">vertical slices</text>
+
+<rect class="g" x="360" y="40" width="140" height="56" rx="8" stroke-width="0.6"/>
+<text class="ts gt" x="430" y="63" text-anchor="middle">Agent in a sandbox</text>
+<text class="tx gt" x="430" y="79" text-anchor="middle">no credentials</text>
+
+<rect class="p" x="530" y="40" width="130" height="56" rx="8" stroke-width="0.6"/>
+<text class="ts pt" x="595" y="63" text-anchor="middle">Custodian</text>
+<text class="tx pt" x="595" y="79" text-anchor="middle">performs every effect</text>
+
+<path class="e" d="M160 68 H190" marker-end="url(#m)"/>
+<path class="e" d="M330 68 H360" marker-end="url(#m)"/>
+<path class="e" d="M500 68 H530" marker-end="url(#m)"/>
+
+<!-- down from Custodian to Gate -->
+<path class="e" d="M595 96 V164" marker-end="url(#m)"/>
+
+<!-- row 2 (y 164..220): Measure <- I merge <- Scorecard <- Gate -->
+<rect class="a" x="530" y="164" width="130" height="56" rx="8" stroke-width="0.6"/>
+<text class="ts at" x="595" y="187" text-anchor="middle">Gate</text>
+<text class="tx at" x="595" y="203" text-anchor="middle">tests, checks, scenarios</text>
+
+<rect class="a" x="360" y="164" width="140" height="56" rx="8" stroke-width="0.6"/>
+<text class="ts at" x="430" y="187" text-anchor="middle">Scorecard</text>
+<text class="tx at" x="430" y="203" text-anchor="middle">evidence and merge danger</text>
+
+<rect class="box" x="190" y="164" width="140" height="56" rx="8" stroke-width="0.6"/>
+<text class="ts" x="260" y="187" text-anchor="middle">I merge</text>
+<text class="tx" x="260" y="203" text-anchor="middle">on evidence, not diffs</text>
+
+<rect class="p" x="20" y="164" width="140" height="56" rx="8" stroke-width="0.6"/>
+<text class="ts pt" x="90" y="187" text-anchor="middle">Measure</text>
+<text class="tx pt" x="90" y="203" text-anchor="middle">drift, escapes, variance</text>
+
+<path class="e" d="M530 192 H500" marker-end="url(#m)"/>
+<path class="e" d="M360 192 H330" marker-end="url(#m)"/>
+<path class="e" d="M190 192 H160" marker-end="url(#m)"/>
+
+<!-- feedback: Measure up to Rules -->
+<path class="e" d="M90 164 V96" marker-end="url(#m)"/>
+<text class="lbl" x="98" y="134">change one rule, regenerate</text>
+
+<!-- caption -->
+<text class="tx" x="340" y="262" text-anchor="middle">One ticket, one PR. Agents never merge. The loop is derived from git and GitHub each tick; nothing in it is trusted on faith.</text>
+</svg>
