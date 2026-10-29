@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="680" height="580" viewBox="0 0 680 580" role="img">
+<title>RSB software factory: repos by folder</title>
+<desc>The ~/code/software/rsb tree, one top-level folder per repo role. factory/ holds the gauge monorepo (the rsb-gauge-* engine crates, the gauge CLI, agent-driver, insights later) plus agent-registry, agent-box, agent-host and rsb-skills. projects/ holds services (daybook, rollout), desktop (lumen) and lib (errors-rs, libraw). ref/ holds the reference apps. research/ holds the record. Outside the tree: the gauge store (SQLite, later Cloudflare), the always-on desktop that runs the loop, and GitHub with the rsb-agent App.</desc>
+<style>
+text{font-family:-apple-system,"Segoe UI",Helvetica,Arial,sans-serif;fill:#3d3d3a}
+.th{font-size:14px;font-weight:500}.ts{font-size:12px}.tx{font-size:11px}
+.box{fill:#f1efe8;stroke:#888780}.root{fill:none;stroke:#888780;stroke-dasharray:4 4}
+.p{fill:#eeedfe;stroke:#534ab7}.pt{fill:#3c3489}
+.g{fill:#e1f5ee;stroke:#0f6e56}.gt{fill:#085041}
+.a{fill:#faeeda;stroke:#ba7517}.at{fill:#633806}
+.dash{fill:none;stroke:#888780;stroke-dasharray:4 3}
+@media (prefers-color-scheme:dark){
+text{fill:#c2c0b6}.box{fill:#2c2c2a;stroke:#888780}
+.p{fill:#3c3489;stroke:#afa9ec}.pt{fill:#eeedfe}
+.g{fill:#085041;stroke:#5dcaa5}.gt{fill:#e1f5ee}
+.a{fill:#633806;stroke:#ef9f27}.at{fill:#faeeda}}
+</style>
+<rect class="root" x="20" y="20" width="640" height="410" rx="16" stroke-width="0.5"/>
+<text class="th" x="40" y="46">~/code/software/rsb</text>
+
+<!-- factory/ -->
+<rect class="box" x="40" y="62" width="600" height="196" rx="12" stroke-width="0.5"/>
+<text class="th" x="56" y="84">factory/</text>
+<rect class="p" x="56" y="96" width="300" height="148" rx="10" stroke-width="0.5"/>
+<text class="th pt" x="72" y="118">gauge</text>
+<rect class="box" x="72" y="130" width="132" height="40" rx="6" stroke-width="0.5"/><text class="ts" x="138" y="154" text-anchor="middle">rsb-gauge-* (engine)</text>
+<rect class="box" x="212" y="130" width="132" height="40" rx="6" stroke-width="0.5"/><text class="ts" x="278" y="154" text-anchor="middle">gauge (cli)</text>
+<rect class="box" x="72" y="184" width="132" height="40" rx="6" stroke-width="0.5"/><text class="ts" x="138" y="208" text-anchor="middle">agent-driver (key)</text>
+<rect class="dash" x="212" y="184" width="132" height="40" rx="6" stroke-width="0.5"/><text class="ts" x="278" y="208" text-anchor="middle">insights (later)</text>
+<rect class="p" x="372" y="96" width="122" height="40" rx="6" stroke-width="0.5"/><text class="ts pt" x="433" y="120" text-anchor="middle">agent-registry</text>
+<rect class="p" x="504" y="96" width="122" height="40" rx="6" stroke-width="0.5"/><text class="ts pt" x="565" y="120" text-anchor="middle">agent-box</text>
+<rect class="p" x="372" y="150" width="122" height="40" rx="6" stroke-width="0.5"/><text class="ts pt" x="433" y="174" text-anchor="middle">agent-host</text>
+<rect class="p" x="504" y="150" width="122" height="40" rx="6" stroke-width="0.5"/><text class="ts pt" x="565" y="174" text-anchor="middle">rsb-skills</text>
+
+<!-- projects/ -->
+<rect class="box" x="40" y="274" width="447" height="140" rx="12" stroke-width="0.5"/>
+<text class="th" x="56" y="296">projects/</text>
+<rect class="box" x="52" y="308" width="135" height="94" rx="10" stroke-width="0.5"/><text class="ts" x="64" y="326">services/</text>
+<rect class="dash" x="64" y="334" width="111" height="26" rx="6" stroke-width="0.5"/><text class="tx" x="119.5" y="351" text-anchor="middle">daybook (next)</text>
+<rect class="dash" x="64" y="366" width="111" height="26" rx="6" stroke-width="0.5"/><text class="tx" x="119.5" y="383" text-anchor="middle">rollout (next)</text>
+<rect class="box" x="195" y="308" width="135" height="94" rx="10" stroke-width="0.5"/><text class="ts" x="207" y="326">desktop/</text>
+<rect class="g" x="207" y="334" width="111" height="26" rx="6" stroke-width="0.5"/><text class="tx gt" x="262.5" y="351" text-anchor="middle">lumen</text>
+<rect class="box" x="338" y="308" width="137" height="94" rx="10" stroke-width="0.5"/><text class="ts" x="350" y="326">lib/</text>
+<rect class="g" x="350" y="334" width="113" height="26" rx="6" stroke-width="0.5"/><text class="tx gt" x="406.5" y="351" text-anchor="middle">errors-rs</text>
+<rect class="g" x="350" y="366" width="113" height="26" rx="6" stroke-width="0.5"/><text class="tx gt" x="406.5" y="383" text-anchor="middle">libraw</text>
+
+<!-- ref/ -->
+<rect class="box" x="499" y="274" width="141" height="78" rx="12" stroke-width="0.5"/>
+<text class="th" x="513" y="294">ref/</text>
+<rect class="a" x="511" y="302" width="117" height="42" rx="6" stroke-width="0.5"/>
+<text class="tx at" x="569.5" y="314" text-anchor="middle">ref-rsb-</text>
+<text class="tx at" x="569.5" y="326" text-anchor="middle">serverless-stack</text>
+<text class="tx at" x="569.5" y="338" text-anchor="middle">echo · shortener</text>
+
+<!-- research/ -->
+<rect class="box" x="499" y="360" width="141" height="60" rx="12" stroke-width="0.5"/>
+<text class="th" x="513" y="380">research/</text>
+<rect class="p" x="511" y="388" width="117" height="26" rx="6" stroke-width="0.5"/><text class="tx pt" x="569.5" y="405" text-anchor="middle">rsb-workflow/</text>
+
+<!-- outside -->
+<text class="ts" x="40" y="460">Outside the tree</text>
+<rect class="box" x="40" y="472" width="135" height="36" rx="6" stroke-width="0.5"/><text class="tx" x="107.5" y="489" text-anchor="middle">Store</text><text class="tx" x="107.5" y="501" text-anchor="middle">SQLite, later Cloudflare</text>
+<rect class="box" x="187" y="472" width="135" height="36" rx="6" stroke-width="0.5"/><text class="tx" x="254.5" y="489" text-anchor="middle">Always-on desktop</text><text class="tx" x="254.5" y="501" text-anchor="middle">runs the loop (systemd)</text>
+<rect class="box" x="334" y="472" width="135" height="36" rx="6" stroke-width="0.5"/><text class="tx" x="401.5" y="489" text-anchor="middle">GitHub</text><text class="tx" x="401.5" y="501" text-anchor="middle">rsb-agent[bot] App</text>
+<rect class="box" x="481" y="472" width="135" height="36" rx="6" stroke-width="0.5"/><text class="tx" x="548.5" y="489" text-anchor="middle">Agents</text><text class="tx" x="548.5" y="501" text-anchor="middle">Claude Code · Codex</text>
+
+<!-- legend -->
+<rect class="p" x="40" y="534" width="12" height="12" rx="2" stroke-width="0.5"/><text class="ts" x="58" y="544">Factory</text>
+<rect class="g" x="156" y="534" width="12" height="12" rx="2" stroke-width="0.5"/><text class="ts" x="174" y="544">Projects</text>
+<rect class="a" x="248" y="534" width="12" height="12" rx="2" stroke-width="0.5"/><text class="ts" x="266" y="544">Reference</text>
+<rect class="box" x="346" y="534" width="12" height="12" rx="2" stroke-width="0.5"/><text class="ts" x="364" y="544">Other</text>
+<rect class="dash" x="414" y="534" width="12" height="12" rx="2" stroke-width="0.5"/><text class="ts" x="432" y="544">Next or later</text>
+</svg>
