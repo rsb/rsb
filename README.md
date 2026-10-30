@@ -1,8 +1,9 @@
 # RSB
 
-**I'm building a software factory to keep me connected to the code.**
+**I'm building a software factory to keep me connected to my code.**
 
-I've stopped writing the code by hand. Instead I write what shapes it: the rules, checks, heuristics and patterns every change is held to. That is how I stay connected to code I no longer type.
+I am stepping away from writing code by hand and focusing on the architecture that allows me to directly influence that code by defining its rules, checks, heuristics, patterns and templates. I have not given up coding, because I believe the generated output is very important and understanding the behavior of the systems created by it is even more important. This is my attempt to responsibly think and act at a higher level without having to sacrifice the integrity, reliability and security of the systems I create. I am engineering my own software factory, `rsb-workflow`, which encapsulates these beliefs while taking advantage of the productivity gains. This workflow hands over code generation to a collection of agents without losing control of the code.
+
 
 > Public so far: [gauge](https://github.com/rsb/gauge), [agent-box](https://github.com/rsb/agent-box), [agent-registry](https://github.com/rsb/agent-registry), [rsb.sh](https://github.com/rsb/rsb.sh), [libraw](https://github.com/rsb/libraw) and [errors-rs](https://github.com/rsb/errors-rs). The rest open as the system gets built.
 >
