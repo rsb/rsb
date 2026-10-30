@@ -4,12 +4,6 @@
 
 I am stepping away from writing code by hand and focusing on the architecture that allows me to directly influence that code by defining its rules, checks, heuristics, patterns and templates. I have not given up coding, because I believe the generated output is very important and understanding the behavior of the systems created by it is even more important. This is my attempt to responsibly think and act at a higher level without having to sacrifice the integrity, reliability and security of the systems I create. I am engineering my own software factory, `rsb-workflow`, which encapsulates these beliefs while taking advantage of the productivity gains. This workflow hands over code generation to a collection of agents without losing control of the code.
 
-
-> Public so far: [gauge](https://github.com/rsb/gauge), [agent-box](https://github.com/rsb/agent-box), [agent-registry](https://github.com/rsb/agent-registry), [rsb.sh](https://github.com/rsb/rsb.sh), [libraw](https://github.com/rsb/libraw) and [errors-rs](https://github.com/rsb/errors-rs). The rest open as the system gets built.
->
-> **Start here:** the [agent-registry](https://github.com/rsb/agent-registry) README shows how the rules reach an agent, and [agent-box](https://github.com/rsb/agent-box) shows the sandbox it runs in.
-
-
 The factory is a feedback loop around coding agents. I write the rules and the measurements; agents write the code inside a default-deny sandbox, holding nothing but their own model sign-in; a custodian performs every effect on their behalf; CI and reviewers produce evidence; I merge on that evidence instead of reading every diff. When the evidence lies, I add a rule or a template, regenerate the same app from the same tickets, and measure whether it got better. Nothing is adopted on faith, including my own design choices.
 
 The other half of the work is the record: every load-bearing decision is written down, argued, dated, and held to, and published as the pieces open. The code is what the record produced.
