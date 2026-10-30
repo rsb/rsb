@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="680" height="580" viewBox="0 0 680 580" role="img">
 <title>RSB software factory: repos by folder</title>
-<desc>The ~/code/software/rsb tree, one top-level folder per repo role. factory/ holds the gauge monorepo (the rsb-gauge-* engine crates, the gauge CLI, agent-driver, insights later) plus agent-registry, agent-box, agent-host and rsb-skills. projects/ holds services (daybook, rollout), desktop (lumen) and lib (errors-rs, libraw). ref/ holds the reference apps. research/ holds the record. Outside the tree: the gauge store (SQLite, later Cloudflare), the always-on desktop that runs the loop, and GitHub with the rsb-agent App.</desc>
+<desc>The ~/code/software/rsb tree, one top-level folder per repo role. factory/ holds the gauge monorepo (the rsb-gauge-* engine crates, the gauge CLI, agent-driver, insights later) plus agent-registry, agent-box, agent-host and rsb-skills. projects/ holds services (daybook, rollout), desktop (lumen) and lib (errors-rs, libraw). ref/ holds the reference apps. research/ holds the record. Outside the tree: the gauge store (SQLite, later Cloudflare), the always-on desktop that runs the loop, and GitHub with the rsb-agent-bot App.</desc>
 <style>
 text{font-family:-apple-system,"Segoe UI",Helvetica,Arial,sans-serif;fill:#3d3d3a}
 .th{font-size:14px;font-weight:500}.ts{font-size:12px}.tx{font-size:11px}
@@ -61,7 +61,7 @@ text{fill:#c2c0b6}.box{fill:#2c2c2a;stroke:#888780}
 <text class="ts" x="40" y="460">Outside the tree</text>
 <rect class="box" x="40" y="472" width="135" height="36" rx="6" stroke-width="0.5"/><text class="tx" x="107.5" y="489" text-anchor="middle">Store</text><text class="tx" x="107.5" y="501" text-anchor="middle">SQLite, later Cloudflare</text>
 <rect class="box" x="187" y="472" width="135" height="36" rx="6" stroke-width="0.5"/><text class="tx" x="254.5" y="489" text-anchor="middle">Always-on desktop</text><text class="tx" x="254.5" y="501" text-anchor="middle">runs the loop (systemd)</text>
-<rect class="box" x="334" y="472" width="135" height="36" rx="6" stroke-width="0.5"/><text class="tx" x="401.5" y="489" text-anchor="middle">GitHub</text><text class="tx" x="401.5" y="501" text-anchor="middle">rsb-agent[bot] App</text>
+<rect class="box" x="334" y="472" width="135" height="36" rx="6" stroke-width="0.5"/><text class="tx" x="401.5" y="489" text-anchor="middle">GitHub</text><text class="tx" x="401.5" y="501" text-anchor="middle">rsb-agent-bot App</text>
 <rect class="box" x="481" y="472" width="135" height="36" rx="6" stroke-width="0.5"/><text class="tx" x="548.5" y="489" text-anchor="middle">Agents</text><text class="tx" x="548.5" y="501" text-anchor="middle">Claude Code · Codex</text>
 
 <!-- legend -->

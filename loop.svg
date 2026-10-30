@@ -1,6 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="680" height="300" viewBox="0 0 680 300" role="img">
+<svg xmlns="http://www.w3.org/2000/svg" width="680" height="320" viewBox="0 0 680 320" role="img">
 <title>The factory loop</title>
-<desc>Rules, heuristics, patterns and templates feed a spec that becomes vertical-slice tickets. An agent works a ticket in a sandbox with no credentials; a custodian performs every effect; a gate runs tests, checks and behavioural scenarios; a scorecard with merge danger is produced; the owner merges; drift, escapes and variance are measured and fed back into the rules.</desc>
+<desc>Rules, heuristics, patterns and templates feed a spec that becomes vertical-slice tickets. An agent works a ticket in a default-deny sandbox that holds only its model sign-in; a custodian performs every effect; a gate runs tests, checks and behavioural scenarios; a scorecard with merge danger is produced; the owner merges; drift, escapes and variance are measured and fed back into the rules.</desc>
 <style>
 text{font-family:-apple-system,"Segoe UI",Helvetica,Arial,sans-serif;fill:#3d3d3a}
 .ts{font-size:12px}.tx{font-size:11px}
@@ -33,7 +33,7 @@ text{fill:#c2c0b6}.box{fill:#2c2c2a;stroke:#888780}
 
 <rect class="g" x="360" y="40" width="140" height="56" rx="8" stroke-width="0.6"/>
 <text class="ts gt" x="430" y="63" text-anchor="middle">Agent in a sandbox</text>
-<text class="tx gt" x="430" y="79" text-anchor="middle">no credentials</text>
+<text class="tx gt" x="430" y="79" text-anchor="middle">default-deny egress</text>
 
 <rect class="p" x="530" y="40" width="130" height="56" rx="8" stroke-width="0.6"/>
 <text class="ts pt" x="595" y="63" text-anchor="middle">Custodian</text>
@@ -73,4 +73,10 @@ text{fill:#c2c0b6}.box{fill:#2c2c2a;stroke:#888780}
 
 <!-- caption -->
 <text class="tx" x="340" y="262" text-anchor="middle">One ticket, one PR. Agents never merge. The loop is derived from git and GitHub each tick; nothing in it is trusted on faith.</text>
+
+<!-- legend -->
+<rect class="p" x="140" y="286" width="12" height="12" rx="3" stroke-width="0.6"/><text class="tx" x="158" y="296">the factory</text>
+<rect class="g" x="250" y="286" width="12" height="12" rx="3" stroke-width="0.6"/><text class="tx" x="268" y="296">the agent</text>
+<rect class="a" x="350" y="286" width="12" height="12" rx="3" stroke-width="0.6"/><text class="tx" x="368" y="296">evidence</text>
+<rect class="box" x="440" y="286" width="12" height="12" rx="3" stroke-width="0.6"/><text class="tx" x="458" y="296">the work and me</text>
 </svg>
